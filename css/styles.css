@@ -1,6 +1,51 @@
+body {
+    background-color: #230000;
+}
+.maintitle_word {
+    position: relative;
+    z-index: 2;
+    font-size: 22.93vw;
+    --tw-text-opacity: 1;
+    color: rgb(89 52 52 / var(--tw-text-opacity));
+    line-height: 0.85;
+}
+
 h1 {
     font-family: 'Cubano', sans-serif;
-    font-size: 400px;
-    color: #e84228;
-    margin: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.section_maintitle {
+    background-color: #230000;
+    position: relative;
+}
+
+.img_pepper {
+    z-index: 20;
+    width: 1500px;
+    height: 610px;
+    position: absolute;
+    top: -120px;
+    left: 0;
+    rotate: 20deg;
+}
+
+.char {
+    display: inline-block;
+    translate: none;
+    rotate: none;
+    scale: none;
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.main_container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.word {
+    display: flex;
+    justify-content: space-between;
 }
