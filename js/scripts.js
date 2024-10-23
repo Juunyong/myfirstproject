@@ -43,6 +43,37 @@ tl.to('.c1', {
         y: 0,
         duration: 0.1,
         opacity: 1,
+    })
+
+    .to('.c11', {
+        y: 0,
+        duration: 0.1,
+        opacity: 1,
+    })
+    .to('.c12', {
+        y: 0,
+        duration: 0.1,
+        opacity: 1,
+    })
+    .to('.c13', {
+        y: 0,
+        duration: 0.1,
+        opacity: 1,
+    })
+    .to('.c14', {
+        y: 0,
+        duration: 0.1,
+        opacity: 1,
+    })
+    .to('.c15', {
+        y: 0,
+        duration: 0.1,
+        opacity: 1,
+    })
+    .to('.c16', {
+        y: 0,
+        duration: 0.1,
+        opacity: 1,
     });
 
 /*
