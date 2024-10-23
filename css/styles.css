@@ -1,7 +1,26 @@
 body {
     background-color: #230000;
 }
-.maintitle_word {
+
+.page__container,
+.page__wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.page__wrap {
+    height: 100%;
+}
+
+.page__container {
+    min-height: 100%;
+}
+.page {
+    position: relative;
+    z-index: 2;
+    flex: 1 0 auto;
+}
+.hero__title {
     position: relative;
     z-index: 2;
     font-size: 22.93vw;
