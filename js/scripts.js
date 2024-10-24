@@ -76,6 +76,42 @@ tl.to('.c1', {
         opacity: 1,
     });
 
+const tl2 = gsap.timeline({
+    ScrollTrigger: {
+        trigger: '.head-section__container', // 객체 기준 범위
+        start: '10% 30%', // 시작 위치
+        end: '80% 60%', // 끝 위치
+        scrub: true, // 스크롤 속도에 따라 애니메이션 속도 조절
+        markers: true, // 개발 가이드선
+    },
+});
+
+tl2.to('.line1', {
+    y: 0,
+    duration: 0.5,
+    opacity: 1,
+})
+    .to('.line2', {
+        y: 0,
+        duration: 0.5,
+        opacity: 1,
+    })
+    .to('.line3', {
+        y: 0,
+        duration: 0.5,
+        opacity: 1,
+    })
+    .to('.line4', {
+        y: 0,
+        duration: 0.5,
+        opacity: 1,
+    })
+    .to('.line5', {
+        y: 0,
+        duration: 0.5,
+        opacity: 1,
+    });
+
 /*
     for ( i = 0; i < 10; i++) {
 
