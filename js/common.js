@@ -1,4 +1,4 @@
-$(function () {
+/*$(function () {
     $('.event-slide').slick({
         autoplay: true,
         autoplaySpeed: 2000,
@@ -172,3 +172,4 @@ $(function () {
         fade: true,
     });
 });
+*/
