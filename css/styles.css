@@ -31,6 +31,10 @@
   display: block;
 }
 
+.text_area {
+  list-style: none;
+}
+
 h2,
 h2 {
   font-size: 36px;
@@ -1601,6 +1605,7 @@ body {
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
 }
 
 main,
@@ -1617,6 +1622,11 @@ section {
 
 .page__wrap {
   height: 100%;
+  margin-bottom: 8rem;
+}
+
+section {
+  margin-bottom: 8rem;
 }
 
 .page__container {
@@ -1655,10 +1665,10 @@ section {
   scale: none;
   opacity: 0;
   transform: translate(0%, 50%);
-  transition: all 1s;
 }
 
-.hero__title {
+.hero__title,
+.footer__title {
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -1673,9 +1683,21 @@ section {
     font-size: 24vw;
   }
 }
+.hero--home {
+  position: relative;
+}
+
 .hero--home .hero__title-row {
   position: relative;
   width: 100%;
+}
+
+.hero--home .hero__pepper {
+  position: absolute;
+  z-index: 400;
+  top: 0;
+  left: 0;
+  transform: scaleX(-1);
 }
 
 .hero--home .hero__title-row:last-child {
@@ -1700,7 +1722,22 @@ section {
     width: auto;
   }
 }
-.hero--home .hero__title-row:last-child span:last-child {
+.footer__title-row:last-child span:last-child {
+  justify-content: flex-end;
+}
+
+.footer__title-row:last-child span {
+  display: flex !important;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .footer__title-row:last-child span {
+    display: inline-block !important;
+    width: auto;
+  }
+}
+.footer__title-row:last-child span:last-child {
   justify-content: flex-end;
 }
 
@@ -1892,4 +1929,57 @@ h1 {
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.benefit_list {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  padding-inline-start: 0px;
+}
+
+.benefit_item {
+  margin: 3rem 10rem;
+}
+.benefit_item li {
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease-in-out;
+  gap: 1rem;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.i_container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 93.4%;
+}
+
+.nav-head__container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .benefit_item {
+    margin: 1rem 3rem;
+  }
+}
+@media (max-width: 760px) {
+  .benefit_list {
+    flex-direction: column;
+    align-items: center;
+  }
 }/*# sourceMappingURL=styles.css.map */

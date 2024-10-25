@@ -116,3 +116,69 @@ tl2.to('.line1', {
     for ( i = 0; i < 10; i++) {
 
     }*/
+
+const tl3 = gsap.timeline({
+    ScrollTrigger: {
+        trigger: '.footer__container', // 객체 기준 범위
+        start: '10% 30%', // 시작 위치
+        end: '80% 60%', // 끝 위치
+        scrub: true, // 스크롤 속도에 따라 애니메이션 속도 조절
+        markers: true, // 개발 가이드선
+    },
+});
+
+tl3.to('.fc1', {
+    y: 0,
+    duration: 0.1,
+    opacity: 1,
+})
+    .to('.fc2', {
+        y: 0,
+        duration: 0.1,
+        opacity: 1,
+    })
+    .to('.fc3', {
+        y: 0,
+        duration: 0.1,
+        opacity: 1,
+    })
+    .to('.fc4', {
+        y: 0,
+        duration: 0.1,
+        opacity: 1,
+    })
+    .to('.fc5', {
+        y: 0,
+        duration: 0.2,
+        opacity: 1,
+    })
+    .to('.fc11', {
+        y: 0,
+        duration: 0.1,
+        opacity: 1,
+    })
+    .to('.fc12', {
+        y: 0,
+        duration: 0.1,
+        opacity: 1,
+    })
+    .to('.fc13', {
+        y: 0,
+        duration: 0.1,
+        opacity: 1,
+    })
+    .to('.fc14', {
+        y: 0,
+        duration: 0.1,
+        opacity: 1,
+    })
+    .to('.fc15', {
+        y: 0,
+        duration: 0.1,
+        opacity: 1,
+    })
+    .to('.fc16', {
+        y: 0,
+        duration: 0.1,
+        opacity: 1,
+    });
