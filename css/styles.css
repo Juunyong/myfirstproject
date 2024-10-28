@@ -184,7 +184,7 @@ h2 {
   animation: shake 0.8s steps(1) infinite;
 }
 
-.ill-shape image {
+.shape_div img {
   transform-origin: 50% 50%;
   animation: imageShake 0.8s steps(1) 0.2s infinite;
 }
@@ -1680,7 +1680,7 @@ section {
 
 @media (min-width: 1024px) {
   .hero--home .hero__title {
-    font-size: 24vw;
+    font-size: 21vw;
   }
 }
 .hero--home {
@@ -1695,9 +1695,19 @@ section {
 .hero--home .hero__pepper {
   position: absolute;
   z-index: 400;
+  top: -23%;
+  left: 0;
+}
+
+.hero__pepper {
+  width: 100%;
+  rotate: 15deg;
+}
+
+.hero__pepper img {
+  position: absolute;
   top: 0;
   left: 0;
-  transform: scaleX(-1);
 }
 
 .hero--home .hero__title-row:last-child {
@@ -1769,7 +1779,6 @@ h1 {
 
 .word {
   display: flex;
-  justify-content: space-between;
 }
 
 .nav-head__menutoggle {
@@ -1886,15 +1895,19 @@ h1 {
   vertical-align: middle;
 }
 
-.img {
-  width: 550px;
-  height: 800px;
-}
-
 .slide_part {
   position: relative;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.slide_part button {
+  font-size: 3vw;
+  background-color: #230000;
+  color: #ffecd5;
+  border-style: none;
 }
 
 .slide_part__scroller {
@@ -1907,8 +1920,11 @@ h1 {
 
 .slide_part__item {
   position: relative;
-  aspect-ratio: 1/1.4545;
-  min-width: calc(var(--v-width) * 0.7333);
+  min-width: 1200px;
+}
+.slide_part__item .img {
+  width: 550px;
+  height: 800px;
 }
 
 @media (min-width: 768px) {
@@ -1982,4 +1998,78 @@ a {
     flex-direction: column;
     align-items: center;
   }
+}
+.hero__bottom-lime {
+  position: absolute;
+  width: 45%;
+}
+
+.hero__bottom-lime-first {
+  left: 10%;
+  top: 75%;
+}
+.hero__bottom-lime-first img {
+  position: absolute;
+  top: 0%;
+  left: 0;
+}
+
+.hero__bottom-lime-last {
+  right: 4%;
+  top: 125%;
+}
+.hero__bottom-lime-last img {
+  position: absolute;
+  top: 0%;
+  right: 0;
+}
+
+.hero__brandstory .hero__title {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  font-size: 24vw;
+  line-height: 0.85;
+  --tw-text-opacity: 1;
+  color: rgb(255 236 213/var(--tw-text-opacity));
+}
+.hero__brandstory .hero__title .line {
+  text-align: right;
+}
+
+.story__first {
+  width: 90%;
+  height: 500px;
+  background-color: #5e855e;
+  rotate: -2.15deg;
+  border: 1px #5e855e solid;
+  border-radius: 45px;
+  margin-bottom: 10%;
+}
+
+.story__second {
+  width: 90%;
+  height: 500px;
+  background-color: #fcbe74;
+  rotate: 2.15deg;
+  border: 1px #fcbe74 solid;
+  border-radius: 45px;
+  margin-bottom: 10%;
+}
+
+.story__third {
+  width: 90%;
+  height: 500px;
+  background-color: #e0adad;
+  rotate: -2.15deg;
+  border: 1px #e0adad solid;
+  border-radius: 45px;
+  margin-bottom: 10%;
+}
+
+.brandstory__main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
 }/*# sourceMappingURL=styles.css.map */
