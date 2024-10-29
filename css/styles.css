@@ -2037,39 +2037,114 @@ a {
   text-align: right;
 }
 
-.story__first {
-  width: 90%;
-  height: 500px;
-  background-color: #5e855e;
-  rotate: -2.15deg;
-  border: 1px #5e855e solid;
-  border-radius: 45px;
-  margin-bottom: 10%;
-}
-
-.story__second {
-  width: 90%;
-  height: 500px;
-  background-color: #fcbe74;
-  rotate: 2.15deg;
-  border: 1px #fcbe74 solid;
-  border-radius: 45px;
-  margin-bottom: 10%;
-}
-
-.story__third {
-  width: 90%;
-  height: 500px;
-  background-color: #e0adad;
-  rotate: -2.15deg;
-  border: 1px #e0adad solid;
-  border-radius: 45px;
-  margin-bottom: 10%;
-}
-
 .brandstory__main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
+}
+
+.menu_head__img-bg {
+  position: absolute;
+  z-index: 10;
+  top: 32%;
+}
+
+.menu_head__img-fruit {
+  position: absolute;
+  z-index: 10;
+  top: 30%;
+  right: 2%;
+  width: 50%;
+  transform: rotate(-16.6deg);
+}
+.menu_head__img-fruit img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.menu_maintitle {
+  color: #230000;
+  font-size: 300px;
+  margin-top: 0;
+  margin-left: 2%;
+}
+
+.menu_subtitle {
+  font-family: "Bakbak One", serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 15vw;
+}
+
+.story__first {
+  background-color: #5e855e;
+  border: 1px #5e855e solid;
+  width: 100%;
+  height: 300px;
+}
+
+.story__second {
+  background-color: #fcbe74;
+  border: 1px #fcbe74 solid;
+  width: 100%;
+  height: 300px;
+}
+
+.story__third {
+  background-color: #e0adad;
+  border: 1px #e0adad solid;
+  width: 100%;
+  height: 300px;
+}
+
+@media (min-width: 600px) {
+  .menu_head__img-fruit {
+    width: 50%;
+  }
+  .menu_maintitle {
+    font-size: 24vw;
+  }
+  .menu_head__img-bg {
+    top: 40%;
+  }
+  .story__first,
+  .story__second,
+  .story__third {
+    height: 600px;
+  }
+}
+@media (min-width: 1024px) {
+  .story__first {
+    width: 90%;
+    height: 500px;
+    rotate: -2.15deg;
+    border-radius: 45px;
+    margin-bottom: 10%;
+  }
+  .story__second {
+    width: 90%;
+    height: 500px;
+    rotate: 2.15deg;
+    border-radius: 45px;
+    margin-bottom: 10%;
+  }
+  .story__third {
+    width: 90%;
+    height: 500px;
+    rotate: -2.15deg;
+    border-radius: 45px;
+    margin-bottom: 10%;
+  }
+  .menu_head__img-fruit {
+    width: 40%;
+  }
+  .menu_head__img-bg {
+    top: 45%;
+  }
+}
+.menu_h1title {
+  text-align: center;
+  font-size: 7vw;
 }/*# sourceMappingURL=styles.css.map */
