@@ -278,6 +278,8 @@ h1 {
 }
 
 .head-section__text {
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
     line-height: 1;
     --tw-text-opacity: 1;
@@ -325,18 +327,6 @@ h1 {
     .img {
         width: 550px;
         height: 800px;
-    }
-}
-
-@media (min-width: 768px) {
-    .slide_part__item {
-        min-width: calc(var(--v-width) * 0.54);
-    }
-}
-
-@media (min-width: 1024px) {
-    .slide_part__item {
-        min-width: calc(var(--v-width) * 0.36375);
     }
 }
 
@@ -405,12 +395,13 @@ a {
 
 .hero__bottom-lime {
     position: absolute;
-    width: 45%;
+    width: 70%;
 }
 
 .hero__bottom-lime-first {
-    left: 10%;
-    top: 75%;
+    left: -10%;
+    top: 40%;
+    rotate: -1.47deg;
     img {
         position: absolute;
         top: 0%;
@@ -418,8 +409,9 @@ a {
     }
 }
 .hero__bottom-lime-last {
-    right: 4%;
-    top: 125%;
+    right: 0%;
+    top: 100%;
+    rotate: -2.1deg;
     img {
         position: absolute;
         top: 0%;
@@ -483,21 +475,126 @@ a {
     background-color: #5e855e;
     border: 1px #5e855e solid;
     width: 100%;
-    height: 300px;
+    height: 100%;
 }
 .story__second {
     background-color: #fcbe74;
     border: 1px #fcbe74 solid;
     width: 100%;
-    height: 300px;
+    height: 100%;
 }
 
 .story__third {
     background-color: #e0adad;
     border: 1px #e0adad solid;
     width: 100%;
-    height: 300px;
+    height: 100%;
 }
+
+.story__document {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12px;
+}
+
+.menu_h1title {
+    text-align: center;
+    font-size: 7vw;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.footer__container {
+    flex-direction: column;
+}
+
+.content_box {
+    display: flex;
+    flex-direction: row;
+}
+.hero__last {
+    position: relative;
+}
+
+.hero__ill__last-first {
+    width: 45%;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    rotate: -52.1997deg;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.hero__ill__last-second {
+    width: 45%;
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    rotate: 25.8deg;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.hero__ill__last-third {
+    width: 45%;
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    rotate: -52.1997deg;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.garlicdrop_event__ill-main {
+    width: 50%;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    transform: scaleX(-1);
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.garlicdrop_event__second {
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    rotate: -70deg;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.garlicdrop_event__third {
+    width: 30%;
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    rotate: 20deg;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
 @media (min-width: 600px) {
     .menu_head__img-fruit {
         width: 50%;
@@ -508,13 +605,20 @@ a {
     .menu_head__img-bg {
         top: 40%;
     }
-    .story__first,
+    /*.story__first,
     .story__second,
     .story__third {
         height: 600px;
+    }*/
+    .story__document {
+        font-size: 20px;
     }
 }
 @media (min-width: 1024px) {
+    .story__sub {
+        display: flex;
+        flex-direction: row;
+    }
     .story__first {
         width: 90%;
         height: 500px;
@@ -548,11 +652,26 @@ a {
     .menu_head__img-bg {
         top: 45%;
     }
-}
-
-.menu_h1title {
-    text-align: center;
-    font-size: 7vw;
-    margin-top: 15px;
-    margin-bottom: 0;
+    .footer__last {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .hero__bottom-lime-first {
+        left: 5%;
+        top: 45%;
+    }
+    .hero__bottom-lime-last {
+        right: 5%;
+        top: 85%;
+    }
+    .hero__bottom-lime {
+        width: 50%;
+    }
+    .hero__ill__last-first,
+    .hero__ill__last-second,
+    .hero__ill__last-third {
+        width: 30%;
+    }
 }
