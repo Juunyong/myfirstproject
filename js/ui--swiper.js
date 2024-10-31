@@ -3,7 +3,7 @@ var swiper = new Swiper('.slide_intro', {
     spaceBetween: 20,
     loop: true,
     autoplay: {
-        delay: 3000,
+        delay: 4000,
     },
     centeredSlides: true,
     pagination: {
@@ -18,6 +18,45 @@ var swiper = new Swiper('.slide_intro', {
         1024: {
             slidesPerView: 5,
             spaceBetween: 30,
+        },
+    },
+});
+
+var swiper = new Swiper('.slide__menu__selector', {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: false,
+});
+
+var swiper = new Swiper('.swiper-event', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+        el: '.event_pagination',
+        clickable: true,
+    },
+    effect: 'fade',
+    // fade 이펙트 겹침 현상 시 사용
+    fadeEffect: { crossFade: true },
+    speed: 300,
+    invert: false,
+    autoplay: {
+        delay: 3000,
+    },
+    loop: true,
+    breakpoints: {
+        600: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            effect: 'slide',
+            autoplay: {
+                delay: 3000,
+            },
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 10,
         },
     },
 });
