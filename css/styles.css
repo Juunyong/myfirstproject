@@ -223,6 +223,7 @@ h2 {
   .third_img {
     width: 40%;
     margin-left: 5%;
+    margin-right: 5%;
   }
   .first_img img,
   .second_img img,
@@ -1660,10 +1661,8 @@ h3.tit {
 body {
   min-height: 100%;
   width: 100%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(35 0 0/var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255/var(--tw-text-opacity));
+  background-color: rgb(35, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: var(--base-font-size);
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: none;
@@ -2104,8 +2103,7 @@ a {
   width: 100%;
   font-size: 24vw;
   line-height: 0.85;
-  --tw-text-opacity: 1;
-  color: rgb(255 236 213/var(--tw-text-opacity));
+  color: rgb(255, 236, 213);
 }
 .hero__brandstory .hero__title .line {
   text-align: right;
@@ -2118,16 +2116,16 @@ a {
   align-content: center;
 }
 
+/*
 .menu_head__img-bg {
-  position: absolute;
-  z-index: 10;
-  top: 32%;
-}
-
+    position: absolute;
+    z-index: 10;
+    top: 32%;
+}*/
 .menu_head__img-fruit {
   position: absolute;
   z-index: 10;
-  top: 30%;
+  top: 15%;
   right: 2%;
   width: 50%;
   transform: rotate(-16.6deg);
@@ -2143,6 +2141,7 @@ a {
   font-size: 24vw;
   margin-top: 0;
   margin-left: 2%;
+  margin-bottom: -1%;
 }
 
 .menu_subtitle {
@@ -2258,7 +2257,7 @@ a {
 }
 
 .garlicdrop_event__second {
-  width: 30%;
+  width: 25%;
   position: absolute;
   top: 35%;
   left: 30%;
@@ -2271,7 +2270,7 @@ a {
 }
 
 .garlicdrop_event__third {
-  width: 30%;
+  width: 25%;
   position: absolute;
   top: 70%;
   left: 45%;
@@ -2297,6 +2296,24 @@ a {
   text-align: center;
 }
 
+p {
+  color: black;
+}
+
+.slide__menu__selector button {
+  border-radius: 45px;
+  border: 1px solid #e84228;
+  color: #e84228;
+  background-color: #ffecd5;
+  height: 45px;
+  width: 90%;
+  transition: all 0.3s;
+}
+.slide__menu__selector button:hover {
+  background-color: #e84228;
+  color: #ffecd5;
+}
+
 @media (min-width: 600px) {
   .menu_head__img-fruit {
     width: 50%;
@@ -2317,6 +2334,11 @@ a {
   }
   .garlicdrop_event {
     height: 1000px;
+  }
+  .hero__ill__last-first,
+  .hero__ill__last-second,
+  .hero__ill__last-third {
+    width: 40%;
   }
 }
 @media (min-width: 1024px) {

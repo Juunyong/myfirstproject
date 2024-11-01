@@ -173,3 +173,7 @@
     });
 });
 */
+
+function myFunction() {
+    document.getElementById('menu__select-button').style.color = '#ffecd5';
+}

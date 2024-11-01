@@ -26,7 +26,13 @@ var swiper = new Swiper('.slide__menu__selector', {
     slidesPerView: 3,
     spaceBetween: 20,
     loop: true,
-    autoplay: false,
+    autoplay: true,
+    breakpoints: {
+        600: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+    },
 });
 
 var swiper = new Swiper('.swiper-event', {
@@ -55,7 +61,7 @@ var swiper = new Swiper('.swiper-event', {
             },
         },
         1024: {
-            slidesPerView: 3,
+            slidesPerView: 5,
             spaceBetween: 10,
         },
     },
