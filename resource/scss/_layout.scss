@@ -323,6 +323,12 @@ h1 {
         background-color: #230000;
         color: #ffecd5;
         border-style: none;
+        @include mobileMore {
+            font-size: 5vw;
+        }
+        @include tabletMore {
+            font-size: 10vw;
+        }
     }
 }
 
@@ -586,7 +592,7 @@ a {
 }
 
 .garlicdrop_event__second {
-    width: 25%;
+    width: 30%;
     position: absolute;
     top: 35%;
     left: 30%;
@@ -598,7 +604,7 @@ a {
     }
 }
 .garlicdrop_event__third {
-    width: 25%;
+    width: 30%;
     position: absolute;
     top: 70%;
     left: 45%;
@@ -737,4 +743,19 @@ p {
     .garlicdrop_event {
         height: 1500px;
     }
+    .garlicdrop_event__ill-main {
+        width: 50%;
+    }
+    .garlicdrop_event__second,
+    .garlicdrop_event__third {
+        width: 22%;
+    }
+}
+
+.swiper-slide-active {
+    transform: scale(1.5) !important;
+}
+
+.swiper-slide {
+    transition: all 0.3s;
 }
