@@ -399,16 +399,17 @@ a {
     justify-content: space-between;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
     .benefit_item {
         margin: 1rem 3rem;
     }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 600px) {
     .benefit_list {
         flex-direction: column;
         align-items: center;
+        gap: 4rem;
     }
 }
 
@@ -751,7 +752,7 @@ p {
         width: 22%;
     }
 }
-
+/*
 .swiper-slide-active {
     transform: scale(1.5) !important;
 }
@@ -759,3 +760,4 @@ p {
 .swiper-slide {
     transition: all 0.3s;
 }
+*/

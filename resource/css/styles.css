@@ -545,15 +545,16 @@ a {
   justify-content: space-between;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .benefit_item {
     margin: 1rem 3rem;
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 600px) {
   .benefit_list {
     flex-direction: column;
     align-items: center;
+    gap: 4rem;
   }
 }
 .hero__bottom-lime {
@@ -904,14 +905,15 @@ p {
     width: 22%;
   }
 }
+/*
 .swiper-slide-active {
-  transform: scale(1.5) !important;
+    transform: scale(1.5) !important;
 }
 
 .swiper-slide {
-  transition: all 0.3s;
+    transition: all 0.3s;
 }
-
+*/
 /* 풀페이지 옵션 */
 /* #menu {position: fixed; left: 20px; top: 50%; transform: redtranslateY(-50%); border-radius: 50px; background-color: rgba(0,0,0,0.3); z-index: 5;}
 #menu a{width: 6px; height: 6px; background-color: #fff; display: block; left: 50%; border-radius: 100%;}

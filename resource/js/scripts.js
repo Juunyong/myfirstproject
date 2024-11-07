@@ -126,6 +126,7 @@ const tl3 = gsap.timeline({
         end: 'bottom bottom', // 끝 위치
         scrub: true, // 스크롤 속도에 따라 애니메이션 속도 조절
         markers: true, // 개발 가이드선
+        once: true,
     },
 });
 

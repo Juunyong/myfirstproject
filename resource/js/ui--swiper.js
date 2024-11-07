@@ -26,7 +26,7 @@ var swiper = new Swiper('.slide__menu__selector', {
     slidesPerView: 3,
     spaceBetween: 20,
     loop: true,
-    //autoplay: true,
+    autoplay: true,
     breakpoints: {
         600: {
             slidesPerView: 4,
@@ -55,13 +55,13 @@ var swiper = new Swiper('.swiper-event', {
         600: {
             slidesPerView: 3,
             spaceBetween: 10,
-            effect: 'slide',
-            autoplay: {
-                delay: 3000,
-            },
+            //    effect: 'slide',
+            // autoplay: {
+            //   delay: 3000,
+            // },
         },
         1024: {
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetween: 10,
         },
     },
