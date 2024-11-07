@@ -83,8 +83,11 @@ tl.to('.c1', {
 const tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: '.head-section__text', // 객체 기준 범위
+        start: '70% 70%',
+        end: '80% 80%',
         scrub: true, // 스크롤 속도에 따라 애니메이션 속도 조절
-        once: true,
+        //     once: true,
+        markers: true,
     },
 });
 

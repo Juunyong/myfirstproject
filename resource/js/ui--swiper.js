@@ -55,14 +55,19 @@ var swiper = new Swiper('.swiper-event', {
         600: {
             slidesPerView: 3,
             spaceBetween: 10,
-            //    effect: 'slide',
-            // autoplay: {
-            //   delay: 3000,
-            // },
+            effect: 'slide',
+            autoplay: {
+                delay: 3000,
+            },
         },
         1024: {
             slidesPerView: 4,
-            spaceBetween: 10,
+            spaceBetween: 5,
+            on: {
+                resize: function () {
+                    swiper.update(); // 브라우저 크기가 변경될 때 슬라이더 업데이트
+                },
+            },
         },
     },
 });

@@ -67,6 +67,10 @@ section {
     opacity: 0;
     transform: translate(0%, 50%);
 }
+
+.line {
+    transition: all 0.3s;
+}
 .hero__title {
     margin: 0 auto;
     position: relative;
@@ -361,17 +365,28 @@ h1 {
 
 .benefit_list {
     display: flex;
-    justify-content: center;
-    gap: 8rem;
-    padding-inline-start: 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    @include mobileMore {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 8rem;
+        padding-inline-start: 0px;
+    }
 }
 .benefit_item {
-    margin: 3rem 10rem;
+    margin: 1rem 3rem;
+
     li {
         display: flex;
         flex-direction: column;
         transition: 0.3s ease-in-out;
         gap: 1rem;
+    }
+    @include tabletMore {
+        margin: 3rem 10rem;
     }
 }
 
@@ -397,20 +412,6 @@ a {
 .nav-head__container {
     align-items: center;
     justify-content: space-between;
-}
-
-@media (max-width: 1024px) {
-    .benefit_item {
-        margin: 1rem 3rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .benefit_list {
-        flex-direction: column;
-        align-items: center;
-        gap: 4rem;
-    }
 }
 
 .hero__bottom-lime {
@@ -756,8 +757,13 @@ p {
 .swiper-slide-active {
     transform: scale(1.5) !important;
 }
-
+*/
 .swiper-slide {
     transition: all 0.3s;
 }
-*/
+
+.sec__brandstory {
+    @include mobileMore {
+        margin-bottom: 16rem;
+    }
+}
