@@ -54,12 +54,13 @@ var swiper = new Swiper('.swiper-event', {
     breakpoints: {
         600: {
             slidesPerView: 3,
-            spaceBetween: 10,
+            spaceBetween: 5,
             effect: 'slide',
             autoplay: {
                 delay: 3000,
             },
         },
+        /*
         1024: {
             slidesPerView: 4,
             spaceBetween: 5,
@@ -68,6 +69,6 @@ var swiper = new Swiper('.swiper-event', {
                     swiper.update(); // 브라우저 크기가 변경될 때 슬라이더 업데이트
                 },
             },
-        },
+        },*/
     },
 });

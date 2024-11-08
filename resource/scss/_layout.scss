@@ -16,7 +16,12 @@ section {
     width: 100%;
     position: relative;
 }
-
+.is_menu__open {
+    .nav-head__menutoggle-icon {
+        rotate: 135deg;
+        transition: all 1s;
+    }
+}
 .page__container,
 .page__wrap {
     display: flex;
@@ -58,14 +63,16 @@ section {
     transition: all 1s;
 }
 */
-
-.char {
+.word {
     display: inline-block;
     translate: none;
     rotate: none;
     scale: none;
     opacity: 0;
     transform: translate(0%, 50%);
+}
+.char {
+    display: inline-block;
 }
 
 .line {
@@ -497,12 +504,32 @@ a {
     border: 1px #5e855e solid;
     width: 100%;
     height: 100%;
+    @include tabletMore {
+        width: 90%;
+        height: 500px;
+        rotate: -2.15deg;
+        border-radius: 45px;
+        margin-bottom: 10%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 20px;
+    }
 }
 .story__second {
     background-color: #fcbe74;
     border: 1px #fcbe74 solid;
     width: 100%;
     height: 100%;
+    @include tabletMore {
+        width: 90%;
+        height: 500px;
+        rotate: 2.15deg;
+        border-radius: 45px;
+        margin-bottom: 10%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 20px;
+    }
 }
 
 .story__third {
@@ -510,6 +537,16 @@ a {
     border: 1px #e0adad solid;
     width: 100%;
     height: 100%;
+    @include tabletMore {
+        width: 90%;
+        height: 500px;
+        rotate: -2.15deg;
+        border-radius: 45px;
+        margin-bottom: 10%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 20px;
+    }
 }
 
 .story__document {
@@ -681,36 +718,7 @@ p {
         display: flex;
         flex-direction: row;
     }
-    .story__first {
-        width: 90%;
-        height: 500px;
-        rotate: -2.15deg;
-        border-radius: 45px;
-        margin-bottom: 10%;
-        margin-right: auto;
-        margin-left: auto;
-        padding-bottom: 20px;
-    }
-    .story__second {
-        width: 90%;
-        height: 500px;
-        rotate: 2.15deg;
-        border-radius: 45px;
-        margin-bottom: 10%;
-        margin-right: auto;
-        margin-left: auto;
-        padding-bottom: 20px;
-    }
-    .story__third {
-        width: 90%;
-        height: 500px;
-        rotate: -2.15deg;
-        border-radius: 45px;
-        margin-bottom: 10%;
-        margin-right: auto;
-        margin-left: auto;
-        padding-bottom: 20px;
-    }
+
     .menu_head__img-fruit {
         width: 40%;
     }

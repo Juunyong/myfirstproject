@@ -4,78 +4,89 @@ gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline();
 
+tl.to('.w1', {
+    y: 0,
+    duration: 0.5,
+    opacity: 1,
+})
+    .to('.w2', {
+        y: 0,
+        duration: 0.5,
+        opacity: 1,
+    })
+    /*
 tl.to('.c1', {
     y: 0,
-    duration: 0.01,
+    duration: 0.5,
     opacity: 1,
 })
     .to('.c2', {
         y: 0,
-        duration: 0.01,
+        duration: 0.5,
         opacity: 1,
     })
     .to('.c3', {
         y: 0,
-        duration: 0.01,
+        duration: 0.5,
         opacity: 1,
     })
     .to('.c4', {
         y: 0,
-        duration: 0.01,
+        duration: 0.5,
         opacity: 1,
     })
     .to('.c5', {
         y: 0,
-        duration: 0.1,
+        duration: 0.5,
         opacity: 1,
     })
     .to('.c6', {
         y: 0,
-        duration: 0.1,
+        duration: 1,
         opacity: 1,
     })
     .to('.c7', {
         y: 0,
-        duration: 0.1,
+        duration: 1,
         opacity: 1,
     })
     .to('.c8', {
         y: 0,
-        duration: 0.1,
+        duration: 1,
         opacity: 1,
     })
 
     .to('.c11', {
         y: 0,
-        duration: 0.1,
+        duration: 1,
         opacity: 1,
     })
     .to('.c12', {
         y: 0,
-        duration: 0.1,
+        duration: 1,
         opacity: 1,
     })
     .to('.c13', {
         y: 0,
-        duration: 0.1,
+        duration: 1,
         opacity: 1,
     })
     .to('.c14', {
         y: 0,
-        duration: 0.1,
+        duration: 1,
         opacity: 1,
     })
     .to('.c15', {
         y: 0,
-        duration: 0.1,
+        duration: 1,
         opacity: 1,
     })
     .to('.c16', {
         y: 0,
-        duration: 0.1,
+        duration: 1,
         opacity: 1,
     })
-
+*/
     .to('.head__pepper', {
         duration: 2,
     });
@@ -83,8 +94,8 @@ tl.to('.c1', {
 const tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: '.head-section__text', // 객체 기준 범위
-        start: '70% 70%',
-        end: '80% 80%',
+        start: '10% 10%',
+        end: '100% 80%',
         scrub: true, // 스크롤 속도에 따라 애니메이션 속도 조절
         //     once: true,
         markers: true,
