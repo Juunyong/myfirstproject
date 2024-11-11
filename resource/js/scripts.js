@@ -4,94 +4,78 @@ gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline();
 
-tl.to('.w1', {
-    y: 0,
-    duration: 0.5,
-    opacity: 1,
-})
-    .to('.w2', {
-        y: 0,
-        duration: 0.5,
-        opacity: 1,
-    })
-    .to('.w3', {
-        y: 0,
-        duration: 0.5,
-        opacity: 1,
-    })
-    /*
 tl.to('.c1', {
     y: 0,
-    duration: 0.5,
+    duration: 0.1,
     opacity: 1,
 })
     .to('.c2', {
         y: 0,
-        duration: 0.5,
+        duration: 0.1,
         opacity: 1,
     })
     .to('.c3', {
         y: 0,
-        duration: 0.5,
+        duration: 0.1,
         opacity: 1,
     })
     .to('.c4', {
         y: 0,
-        duration: 0.5,
+        duration: 0.1,
         opacity: 1,
     })
     .to('.c5', {
         y: 0,
-        duration: 0.5,
+        duration: 0.1,
         opacity: 1,
     })
     .to('.c6', {
         y: 0,
-        duration: 1,
+        duration: 0.1,
         opacity: 1,
     })
     .to('.c7', {
         y: 0,
-        duration: 1,
+        duration: 0.1,
         opacity: 1,
     })
     .to('.c8', {
         y: 0,
-        duration: 1,
+        duration: 0.1,
         opacity: 1,
     })
 
     .to('.c11', {
         y: 0,
-        duration: 1,
+        duration: 0.1,
         opacity: 1,
     })
     .to('.c12', {
         y: 0,
-        duration: 1,
+        duration: 0.1,
         opacity: 1,
     })
     .to('.c13', {
         y: 0,
-        duration: 1,
+        duration: 0.1,
         opacity: 1,
     })
     .to('.c14', {
         y: 0,
-        duration: 1,
+        duration: 0.1,
         opacity: 1,
     })
     .to('.c15', {
         y: 0,
-        duration: 1,
+        duration: 0.1,
         opacity: 1,
     })
     .to('.c16', {
         y: 0,
-        duration: 1,
+        duration: 0.1,
         opacity: 1,
     })
-*/
+
     .to('.head__pepper', {
         duration: 2,
     });
@@ -99,8 +83,8 @@ tl.to('.c1', {
 const tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: '.head-section__text', // 객체 기준 범위
-        start: '50% 50%',
-        end: '100% 80%',
+        start: '60% 60%',
+        end: '80% 80%',
         scrub: true, // 스크롤 속도에 따라 애니메이션 속도 조절
         once: true,
     },
@@ -150,7 +134,7 @@ const tl3 = gsap.timeline({
 
 tl3.to('.fc1', {
     y: 0,
-    duration: 2,
+    duration: 0.2,
     opacity: 1,
 })
     .to('.fc2', {
