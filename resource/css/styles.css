@@ -198,6 +198,9 @@ section {
   scale: none;
   opacity: 0;
   transform: translate(0%, 50%);
+}
+
+.line1 {
   transition: all 1s;
 }
 
@@ -209,8 +212,15 @@ section {
   display: inline-block;
 }
 
-.line {
-  transition: all 0.3s;
+.w1,
+.w2,
+.w3 {
+  display: inline-block;
+  translate: none;
+  rotate: none;
+  scale: none;
+  opacity: 0;
+  transform: translate(0%, 50%);
 }
 
 .hero__title {

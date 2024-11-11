@@ -6,73 +6,73 @@ const tl = gsap.timeline();
 
 tl.to('.c1', {
     y: 0,
-    duration: 0.1,
+    duration: 0.3,
     opacity: 1,
 })
     .to('.c2', {
         y: 0,
-        duration: 0.1,
+        duration: 0.3,
         opacity: 1,
     })
     .to('.c3', {
         y: 0,
-        duration: 0.1,
+        duration: 0.3,
         opacity: 1,
     })
     .to('.c4', {
         y: 0,
-        duration: 0.1,
+        duration: 0.3,
         opacity: 1,
     })
     .to('.c5', {
         y: 0,
-        duration: 0.1,
+        duration: 0.3,
         opacity: 1,
     })
     .to('.c6', {
         y: 0,
-        duration: 0.1,
+        duration: 0.3,
         opacity: 1,
     })
     .to('.c7', {
         y: 0,
-        duration: 0.1,
+        duration: 0.3,
         opacity: 1,
     })
     .to('.c8', {
         y: 0,
-        duration: 0.1,
+        duration: 0.3,
         opacity: 1,
     })
 
     .to('.c11', {
         y: 0,
-        duration: 0.1,
+        duration: 0.3,
         opacity: 1,
     })
     .to('.c12', {
         y: 0,
-        duration: 0.1,
+        duration: 0.3,
         opacity: 1,
     })
     .to('.c13', {
         y: 0,
-        duration: 0.1,
+        duration: 0.3,
         opacity: 1,
     })
     .to('.c14', {
         y: 0,
-        duration: 0.1,
+        duration: 0.3,
         opacity: 1,
     })
     .to('.c15', {
         y: 0,
-        duration: 0.1,
+        duration: 0.3,
         opacity: 1,
     })
     .to('.c16', {
         y: 0,
-        duration: 0.1,
+        duration: 0.3,
         opacity: 1,
     })
 
@@ -185,5 +185,36 @@ tl3.to('.fc1', {
     .to('.fc16', {
         y: 0,
         duration: 2,
+        opacity: 1,
+    });
+
+const tl4 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.head-section__text', // 객체 기준 범위
+        start: '20% 20%', // 시작 위치
+        end: '30% 30%', // 끝 위치
+        scrub: true, // 스크롤 속도에 따라 애니메이션 속도 조절
+        once: true,
+    },
+});
+
+tl4.to('.line11', {
+    y: 0,
+    duration: 1,
+    opacity: 1,
+})
+    .to('.line12', {
+        y: 0,
+        duration: 10,
+        opacity: 1,
+    })
+    .to('.line13', {
+        y: 0,
+        duration: 10,
+        opacity: 1,
+    })
+    .to('.line14', {
+        y: 0,
+        duration: 10,
         opacity: 1,
     });
