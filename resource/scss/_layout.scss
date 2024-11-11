@@ -51,7 +51,7 @@ section {
             transform: translate(0%, 0%);
         }
     }
-}
+}*/
 
 .char {
     display: inline-block;
@@ -62,7 +62,7 @@ section {
     transform: translate(0%, 50%);
     transition: all 1s;
 }
-*/
+
 .word {
     display: inline-block;
     translate: none;
@@ -330,16 +330,10 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     button {
-        font-size: 3vw;
+        font-size: 7vw;
         background-color: #230000;
         color: #ffecd5;
         border-style: none;
-        @include mobileMore {
-            font-size: 5vw;
-        }
-        @include tabletMore {
-            font-size: 10vw;
-        }
     }
 }
 

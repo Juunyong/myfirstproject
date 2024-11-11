@@ -14,6 +14,11 @@ tl.to('.w1', {
         duration: 0.5,
         opacity: 1,
     })
+    .to('.w3', {
+        y: 0,
+        duration: 0.5,
+        opacity: 1,
+    })
     /*
 tl.to('.c1', {
     y: 0,
@@ -94,17 +99,16 @@ tl.to('.c1', {
 const tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: '.head-section__text', // 객체 기준 범위
-        start: '10% 10%',
+        start: '50% 50%',
         end: '100% 80%',
         scrub: true, // 스크롤 속도에 따라 애니메이션 속도 조절
-        //     once: true,
-        markers: true,
+        once: true,
     },
 });
 
 tl2.to('.line1', {
     y: 0,
-    duration: 10,
+    duration: 1,
     opacity: 1,
 })
     .to('.line2', {

@@ -34,7 +34,7 @@ var swiper = new Swiper('.slide__menu__selector', {
         },
     },
 });
-
+/*
 var swiper = new Swiper('.swiper-event', {
     slidesPerView: 1,
     spaceBetween: 20,
@@ -51,6 +51,7 @@ var swiper = new Swiper('.swiper-event', {
         delay: 3000,
     },
     loop: true,
+    /*
     breakpoints: {
         600: {
             slidesPerView: 3,
@@ -69,6 +70,5 @@ var swiper = new Swiper('.swiper-event', {
                     swiper.update(); // 브라우저 크기가 변경될 때 슬라이더 업데이트
                 },
             },
-        },*/
-    },
-});
+        },
+});*/
