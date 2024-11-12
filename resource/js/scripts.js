@@ -4,11 +4,27 @@ gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline();
 
-tl.to('.c1', {
+tl.to('.w1', {
     y: 0,
-    duration: 0.3,
+    duration: 0.7,
     opacity: 1,
 })
+    .to('.w2', {
+        y: 0,
+        duration: 0.7,
+        opacity: 1,
+    })
+    .to('.w3', {
+        y: 0,
+        duration: 0.7,
+        opacity: 1,
+    });
+/*
+    .to('.c1', {
+        y: 0,
+        duration: 0.3,
+        opacity: 1,
+    })
     .to('.c2', {
         y: 0,
         duration: 0.3,
@@ -79,7 +95,7 @@ tl.to('.c1', {
     .to('.head__pepper', {
         duration: 2,
     });
-
+*/
 const tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: '.head-section__text', // 객체 기준 범위
