@@ -18,7 +18,28 @@ tl.to('.w1', {
         y: 0,
         duration: 0.7,
         opacity: 1,
-    });
+    })
+    .to('.hero__bottom-lime-first', {
+        y: 0,
+        duration: 0.7,
+    })
+    .to(
+        '.hero__bottom-lime-last',
+        {
+            y: 0,
+            duration: 0.7,
+        },
+        '-=0.2'
+    )
+    .to(
+        '.hero__pepper',
+        {
+            x: 0,
+            y: 0,
+            duration: 0.7,
+        },
+        '-=0.2'
+    );
 /*
     .to('.c1', {
         y: 0,

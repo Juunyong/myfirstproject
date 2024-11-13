@@ -265,8 +265,8 @@ section {
 .hero--home .hero__pepper {
   position: absolute;
   z-index: 400;
-  top: -23%;
-  left: 0;
+  right: 0;
+  transform: translate(-20%, -125%);
 }
 
 .hero__pepper {
@@ -366,6 +366,9 @@ h1 {
   position: relative;
   display: flex;
   align-items: center;
+  background-color: transparent;
+  border: none;
+  color: white;
 }
 
 .nav-head__menutoggle-text {
@@ -574,6 +577,7 @@ a {
   left: -10%;
   top: 40%;
   rotate: -1.47deg;
+  transform: translate(0%, -200%);
 }
 .hero__bottom-lime-first img {
   position: absolute;
@@ -585,6 +589,7 @@ a {
   right: 0%;
   top: 100%;
   rotate: -2.1deg;
+  transform: translate(0%, -260%);
 }
 .hero__bottom-lime-last img {
   position: absolute;
@@ -888,6 +893,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-family: "Cubano";
   }
   .hero__bottom-lime-first {
     left: 5%;
@@ -2553,6 +2559,22 @@ h2 {
   top: 33%;
   flex-wrap: wrap;
 }
+@media (min-width: 1024px) {
+  .footer__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    z-index: 2;
+    width: 5%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transform: translate(-100%, 50%);
+  }
+  .footer__icon img {
+    display: flex;
+  }
+}
 
 .logo__div img {
   width: 25%;
@@ -2581,17 +2603,5 @@ h2 {
     left: 50%;
     z-index: 2;
     transform: translate(-50%, -50%);
-  }
-  .footer__icon {
-    position: absolute;
-    top: 50%;
-    left: 45%;
-    display: flex;
-    z-index: 2;
-    width: 5%;
-    flex-direction: column;
-  }
-  .footer__icon img {
-    display: flex;
   }
 }/*# sourceMappingURL=styles.css.map */

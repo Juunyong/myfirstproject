@@ -223,6 +223,20 @@ h2 {
     position: absolute;
     top: 33%;
     flex-wrap: wrap;
+    @include tabletMore {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        z-index: 2;
+        width: 5%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        transform: translate(-100%, 50%);
+        img {
+            display: flex;
+        }
+    }
 }
 .logo__div {
     img {
@@ -253,19 +267,6 @@ h2 {
             left: 50%;
             z-index: 2;
             transform: translate(-50%, -50%);
-        }
-    }
-
-    .footer__icon {
-        position: absolute;
-        top: 50%;
-        left: 45%;
-        display: flex;
-        z-index: 2;
-        width: 5%;
-        flex-direction: column;
-        img {
-            display: flex;
         }
     }
 }
