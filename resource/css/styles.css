@@ -196,7 +196,6 @@ section {
   translate: none;
   rotate: none;
   scale: none;
-  transform: translate(0%, 20%);
 }
 
 .line1 {
@@ -2517,7 +2516,7 @@ h2 {
   position: absolute;
   width: 100%;
   right: 0%;
-  top: 60%;
+  top: 50%;
   rotate: 20deg;
 }
 

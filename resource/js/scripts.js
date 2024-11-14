@@ -1,5 +1,7 @@
 /* use GSAP */
 
+const { rotate } = require('three/webgpu');
+
 gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline();
@@ -21,7 +23,15 @@ tl.to('.w1', {
     })
     .to('.hero__bottom-lime-first', {
         y: 0,
-        duration: 0.7,
+        duration: 0.5,
+    })
+    .to('.hero__bottom-lime-first', {
+        y: -200,
+        duration: 0.3,
+    })
+    .to('.hero__bottom-lime-first', {
+        y: 0,
+        duration: 0.3,
     })
     .to(
         '.hero__bottom-lime-last',
@@ -157,7 +167,7 @@ tl2.to('.line1', {
     for ( i = 0; i < 10; i++) {
 
     }*/
-
+/*
 const tl3 = gsap.timeline({
     scrollTrigger: {
         trigger: '.footer__container', // 객체 기준 범위
@@ -224,7 +234,7 @@ tl3.to('.fc1', {
         duration: 2,
         opacity: 1,
     });
-
+*/
 const tl4 = gsap.timeline({
     scrollTrigger: {
         trigger: '.head-section__text', // 객체 기준 범위
@@ -255,3 +265,10 @@ tl4.to('.line11', {
         duration: 10,
         opacity: 1,
     });
+
+const tl_brandstory = gsap.timeline();
+
+tl_brandstory.to('.main_pan', {
+    rotate: 40,
+    duration: 1,
+});
