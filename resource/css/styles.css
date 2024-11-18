@@ -2514,8 +2514,8 @@ h2 {
 
 .main_pan {
   position: absolute;
-  width: 100%;
-  right: 0%;
+  width: 120%;
+  right: -15%;
   top: 50%;
   rotate: 20deg;
 }

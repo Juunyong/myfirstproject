@@ -1,7 +1,5 @@
 /* use GSAP */
 
-const { rotate } = require('three/webgpu');
-
 gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline();
@@ -25,14 +23,7 @@ tl.to('.w1', {
         y: 0,
         duration: 0.5,
     })
-    .to('.hero__bottom-lime-first', {
-        y: -200,
-        duration: 0.3,
-    })
-    .to('.hero__bottom-lime-first', {
-        y: 0,
-        duration: 0.3,
-    })
+
     .to(
         '.hero__bottom-lime-last',
         {
@@ -51,78 +42,7 @@ tl.to('.w1', {
         '-=0.2'
     );
 /*
-    .to('.c1', {
-        y: 0,
-        duration: 0.3,
-        opacity: 1,
-    })
-    .to('.c2', {
-        y: 0,
-        duration: 0.3,
-        opacity: 1,
-    })
-    .to('.c3', {
-        y: 0,
-        duration: 0.3,
-        opacity: 1,
-    })
-    .to('.c4', {
-        y: 0,
-        duration: 0.3,
-        opacity: 1,
-    })
-    .to('.c5', {
-        y: 0,
-        duration: 0.3,
-        opacity: 1,
-    })
-    .to('.c6', {
-        y: 0,
-        duration: 0.3,
-        opacity: 1,
-    })
-    .to('.c7', {
-        y: 0,
-        duration: 0.3,
-        opacity: 1,
-    })
-    .to('.c8', {
-        y: 0,
-        duration: 0.3,
-        opacity: 1,
-    })
-
-    .to('.c11', {
-        y: 0,
-        duration: 0.3,
-        opacity: 1,
-    })
-    .to('.c12', {
-        y: 0,
-        duration: 0.3,
-        opacity: 1,
-    })
-    .to('.c13', {
-        y: 0,
-        duration: 0.3,
-        opacity: 1,
-    })
-    .to('.c14', {
-        y: 0,
-        duration: 0.3,
-        opacity: 1,
-    })
-    .to('.c15', {
-        y: 0,
-        duration: 0.3,
-        opacity: 1,
-    })
-    .to('.c16', {
-        y: 0,
-        duration: 0.3,
-        opacity: 1,
-    })
-
+ 
     .to('.head__pepper', {
         duration: 2,
     });
@@ -268,7 +188,81 @@ tl4.to('.line11', {
 
 const tl_brandstory = gsap.timeline();
 
-tl_brandstory.to('.main_pan', {
-    rotate: 40,
-    duration: 1,
-});
+tl_brandstory
+    .to('.c1', {
+        y: 0,
+        duration: 0.3,
+        opacity: 1,
+    })
+    .to('.c2', {
+        y: 0,
+        duration: 0.3,
+        opacity: 1,
+    })
+    .to('.c3', {
+        y: 0,
+        duration: 0.3,
+        opacity: 1,
+    })
+    .to('.c4', {
+        y: 0,
+        duration: 0.3,
+        opacity: 1,
+    })
+    .to('.c5', {
+        y: 0,
+        duration: 0.3,
+        opacity: 1,
+    })
+    .to('.c6', {
+        y: 0,
+        duration: 0.3,
+        opacity: 1,
+    })
+    .to('.c7', {
+        y: 0,
+        duration: 0.3,
+        opacity: 1,
+    })
+    .to('.c8', {
+        y: 0,
+        duration: 0.3,
+        opacity: 1,
+    })
+
+    .to('.c11', {
+        y: 0,
+        duration: 0.3,
+        opacity: 1,
+    })
+    .to('.c12', {
+        y: 0,
+        duration: 0.3,
+        opacity: 1,
+    })
+    .to('.c13', {
+        y: 0,
+        duration: 0.3,
+        opacity: 1,
+    })
+    .to('.c14', {
+        y: 0,
+        duration: 0.3,
+        opacity: 1,
+    })
+    .to('.c15', {
+        y: 0,
+        duration: 0.3,
+        opacity: 1,
+    })
+    .to('.c16', {
+        y: 0,
+        duration: 0.3,
+        opacity: 1,
+    });
+/*
+    .to('.main_pan', {
+        rotate: 33,
+        duration: 1,
+    });
+*/
