@@ -36,7 +36,7 @@ tl.to('.w1', {
         '.hero__pepper',
         {
             x: 0,
-            y: 0,
+            y: -170,
             duration: 0.7,
         },
         '-=0.2'

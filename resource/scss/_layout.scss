@@ -127,7 +127,7 @@ section {
     transform: translate(-20%, -125%);
 }
 .hero__pepper {
-    width: 100%;
+    width: 110%;
     rotate: 15deg;
 }
 
@@ -433,7 +433,7 @@ a {
     left: -10%;
     top: 40%;
     rotate: -1.47deg;
-    transform: translate(0%, -200%);
+    transform: translate(10%, -200%);
     img {
         position: absolute;
         top: 0%;
@@ -444,7 +444,7 @@ a {
     right: 0%;
     top: 100%;
     rotate: -2.1deg;
-    transform: translate(0%, -260%);
+    transform: translate(10%, -280%);
     img {
         position: absolute;
         top: 0%;
@@ -592,12 +592,15 @@ a {
         top: 0;
         left: 0;
     }
+    @include tabletMore {
+        top: 45%;
+    }
 }
 
 .hero__ill__last-second {
     width: 45%;
     position: absolute;
-    top: 55%;
+    top: 45%;
     left: 15%;
     rotate: 25.8deg;
     img {
@@ -605,12 +608,16 @@ a {
         top: 0;
         left: 0;
     }
+
+    @include tabletMore {
+        top: 65%;
+    }
 }
 
 .hero__ill__last-third {
     width: 45%;
     position: absolute;
-    top: 85%;
+    top: 65%;
     left: 35%;
     rotate: -52.1997deg;
     img {
@@ -618,15 +625,19 @@ a {
         top: 0;
         left: 0;
     }
+
+    @include tabletMore {
+        top: 85%;
+    }
 }
 .garlicdrop_event {
-    height: 740px;
+    height: 700px;
 }
 .garlicdrop_event__ill-main {
-    width: 50%;
+    width: 70%;
     position: absolute;
     top: 0%;
-    left: 20%;
+    left: 10%;
     transform: scaleX(-1);
     img {
         position: absolute;
@@ -636,7 +647,7 @@ a {
 }
 
 .garlicdrop_event__second {
-    width: 30%;
+    width: 40%;
     position: absolute;
     top: 35%;
     left: 30%;
@@ -648,11 +659,11 @@ a {
     }
 }
 .garlicdrop_event__third {
-    width: 30%;
+    width: 40%;
     position: absolute;
     top: 70%;
-    left: 45%;
-    rotate: 20deg;
+    left: 40%;
+    rotate: 40deg;
     img {
         position: absolute;
         top: 0;

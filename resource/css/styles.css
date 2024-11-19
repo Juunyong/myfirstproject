@@ -269,7 +269,7 @@ section {
 }
 
 .hero__pepper {
-  width: 100%;
+  width: 110%;
   rotate: 15deg;
 }
 
@@ -576,7 +576,7 @@ a {
   left: -10%;
   top: 40%;
   rotate: -1.47deg;
-  transform: translate(0%, -200%);
+  transform: translate(10%, -200%);
 }
 .hero__bottom-lime-first img {
   position: absolute;
@@ -588,7 +588,7 @@ a {
   right: 0%;
   top: 100%;
   rotate: -2.1deg;
-  transform: translate(0%, -260%);
+  transform: translate(10%, -280%);
 }
 .hero__bottom-lime-last img {
   position: absolute;
@@ -747,11 +747,16 @@ a {
   top: 0;
   left: 0;
 }
+@media (min-width: 1024px) {
+  .hero__ill__last-first {
+    top: 45%;
+  }
+}
 
 .hero__ill__last-second {
   width: 45%;
   position: absolute;
-  top: 55%;
+  top: 45%;
   left: 15%;
   rotate: 25.8deg;
 }
@@ -760,11 +765,16 @@ a {
   top: 0;
   left: 0;
 }
+@media (min-width: 1024px) {
+  .hero__ill__last-second {
+    top: 65%;
+  }
+}
 
 .hero__ill__last-third {
   width: 45%;
   position: absolute;
-  top: 85%;
+  top: 65%;
   left: 35%;
   rotate: -52.1997deg;
 }
@@ -773,16 +783,21 @@ a {
   top: 0;
   left: 0;
 }
+@media (min-width: 1024px) {
+  .hero__ill__last-third {
+    top: 85%;
+  }
+}
 
 .garlicdrop_event {
-  height: 740px;
+  height: 700px;
 }
 
 .garlicdrop_event__ill-main {
-  width: 50%;
+  width: 70%;
   position: absolute;
   top: 0%;
-  left: 20%;
+  left: 10%;
   transform: scaleX(-1);
 }
 .garlicdrop_event__ill-main img {
@@ -792,7 +807,7 @@ a {
 }
 
 .garlicdrop_event__second {
-  width: 30%;
+  width: 40%;
   position: absolute;
   top: 35%;
   left: 30%;
@@ -805,11 +820,11 @@ a {
 }
 
 .garlicdrop_event__third {
-  width: 30%;
+  width: 40%;
   position: absolute;
   top: 70%;
-  left: 45%;
-  rotate: 20deg;
+  left: 40%;
+  rotate: 40deg;
 }
 .garlicdrop_event__third img {
   position: absolute;
