@@ -188,7 +188,8 @@ tl4.to('.line11', {
 
 const tl_brandstory = gsap.timeline();
 
-tl_brandstory
+tl_brandstory;
+/*
     .to('.c1', {
         y: 0,
         duration: 0.3,
@@ -259,10 +260,10 @@ tl_brandstory
         y: 0,
         duration: 0.3,
         opacity: 1,
-    });
+    })
+*/
 /*
     .to('.main_pan', {
         rotate: 33,
         duration: 1,
-    });
-*/
+    });*/

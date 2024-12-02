@@ -5,7 +5,7 @@ $(function () {
 });
 
 $(function () {
-    $('.is_menu__open').on('click', function () {
+    $('.nav-head__menutoggle is_menu__open').on('click', function () {
         $('.nav-head__menutoggle').removeClass('is_menu__open');
     });
 });
