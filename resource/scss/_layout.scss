@@ -21,6 +21,13 @@ section {
         rotate: 135deg;
         transition: all 1s;
     }
+    .nav-head__menutoggle-circle {
+        transform: scale(13.5);
+        transition: all 1.5s;
+        @include tabletMore {
+            transform: scale(30);
+        }
+    }
 }
 .page__container,
 .page__wrap {
@@ -259,6 +266,7 @@ h1 {
 }
 
 .nav-head__menutoggle-circle {
+    z-index: 10;
     order: 1;
     display: flex;
     height: 3rem;
