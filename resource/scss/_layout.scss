@@ -9,6 +9,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin: 0;
+    overflow-x: hidden;
 }
 
 main,
@@ -445,6 +446,9 @@ a {
 .hero__bottom-lime {
     position: absolute;
     width: 70%;
+    @include tabletMore {
+        width: 50%;
+    }
 }
 
 .hero__bottom-lime-first {
@@ -452,6 +456,10 @@ a {
     top: 40%;
     rotate: -1.47deg;
     transform: translate(10%, -200%);
+    @include tabletMore {
+        left: 5%;
+        top: 45%;
+    }
     img {
         position: absolute;
         top: 0%;
@@ -463,6 +471,10 @@ a {
     top: 100%;
     rotate: -2.1deg;
     transform: translate(10%, -280%);
+    @include tabletMore {
+        right: 5%;
+        top: 85%;
+    }
     img {
         position: absolute;
         top: 0%;
@@ -502,6 +514,12 @@ a {
     right: 2%;
     width: 50%;
     transform: rotate(-16.6deg);
+    @include mobileMore {
+        width: 50%;
+    }
+    @include tabletMore {
+        width: 40%;
+    }
     img {
         position: absolute;
         top: 0;
@@ -514,6 +532,9 @@ a {
     margin-top: 0;
     margin-left: 2%;
     margin-bottom: -1%;
+    @include mobileMore {
+        font-size: 24vw;
+    }
 }
 
 .menu_subtitle {
@@ -578,6 +599,9 @@ a {
     flex-direction: column;
     align-items: center;
     margin: 12px;
+    @include mobileMore {
+        font-size: 20px;
+    }
 }
 
 .menu_h1title {
@@ -605,13 +629,17 @@ a {
     top: 25%;
     left: 40%;
     rotate: -52.1997deg;
+    @include mobileMore {
+        width: 40%;
+    }
+    @include tabletMore {
+        top: 45%;
+        width: 30%;
+    }
     img {
         position: absolute;
         top: 0;
         left: 0;
-    }
-    @include tabletMore {
-        top: 45%;
     }
 }
 
@@ -621,14 +649,17 @@ a {
     top: 45%;
     left: 15%;
     rotate: 25.8deg;
+    @include mobileMore {
+        width: 40%;
+    }
+    @include tabletMore {
+        top: 65%;
+        width: 30%;
+    }
     img {
         position: absolute;
         top: 0;
         left: 0;
-    }
-
-    @include tabletMore {
-        top: 65%;
     }
 }
 
@@ -638,18 +669,24 @@ a {
     top: 65%;
     left: 35%;
     rotate: -52.1997deg;
+    @include mobileMore {
+        width: 40%;
+    }
+    @include tabletMore {
+        top: 85%;
+        width: 30%;
+    }
     img {
         position: absolute;
         top: 0;
         left: 0;
     }
-
-    @include tabletMore {
-        top: 85%;
-    }
 }
 .garlicdrop_event {
     height: 700px;
+    @include mobileMore {
+        height: 1000px;
+    }
 }
 .garlicdrop_event__ill-main {
     width: 70%;
@@ -657,6 +694,10 @@ a {
     top: 0%;
     left: 10%;
     transform: scaleX(-1);
+    @include tabletMore {
+        left: 30%;
+        width: 30%;
+    }
     img {
         position: absolute;
         top: 0;
@@ -669,7 +710,15 @@ a {
     position: absolute;
     top: 35%;
     left: 30%;
-    rotate: -70deg;
+    rotate: -75deg;
+    @include mobileMore {
+        top: 40%;
+    }
+    @include tabletMore {
+        width: 20%;
+        top: 40%;
+        left: 35%;
+    }
     img {
         position: absolute;
         top: 0;
@@ -681,7 +730,12 @@ a {
     position: absolute;
     top: 70%;
     left: 40%;
-    rotate: 40deg;
+    rotate: 20deg;
+    @include tabletMore {
+        top: 65%;
+        left: 45%;
+        width: 20%;
+    }
     img {
         position: absolute;
         top: 0;
@@ -692,6 +746,9 @@ a {
 .event_content_box {
     display: flex;
     flex-direction: column;
+    @include tabletMore {
+        flex-direction: row;
+    }
 }
 
 .event_maintitle {
@@ -721,12 +778,6 @@ p {
     }
 }
 @media (min-width: 600px) {
-    .menu_head__img-fruit {
-        width: 50%;
-    }
-    .menu_maintitle {
-        font-size: 24vw;
-    }
     .menu_head__img-bg {
         top: 40%;
     }
@@ -735,65 +786,25 @@ p {
     .story__third {
         height: 600px;
     }*/
-    .story__document {
-        font-size: 20px;
-    }
-    .garlicdrop_event {
-        height: 1000px;
-    }
-    .hero__ill__last-first,
-    .hero__ill__last-second,
-    .hero__ill__last-third {
-        width: 40%;
-    }
 }
-@media (min-width: 1024px) {
-    .story__sub {
+.story__sub {
+    @include tabletMore {
         display: flex;
         flex-direction: row;
     }
-
-    .menu_head__img-fruit {
-        width: 40%;
-    }
+}
+@media (min-width: 1024px) {
     .menu_head__img-bg {
         top: 45%;
     }
-    .footer__last {
+}
+.footer__last {
+    @include tabletMore {
         margin-top: 5%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         font-family: 'Cubano';
-    }
-    .hero__bottom-lime-first {
-        left: 5%;
-        top: 45%;
-    }
-    .hero__bottom-lime-last {
-        right: 5%;
-        top: 85%;
-    }
-    .hero__bottom-lime {
-        width: 50%;
-    }
-    .hero__ill__last-first,
-    .hero__ill__last-second,
-    .hero__ill__last-third {
-        width: 30%;
-    }
-    .event_content_box {
-        flex-direction: row;
-    }
-    .garlicdrop_event {
-        height: 1500px;
-    }
-    .garlicdrop_event__ill-main {
-        width: 50%;
-    }
-    .garlicdrop_event__second,
-    .garlicdrop_event__third {
-        width: 22%;
     }
 }
 /*
