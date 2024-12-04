@@ -1,11 +1,10 @@
-$(function () {
-    $('.nav-head__menutoggle').on('click', function () {
-        $('.nav-head__menutoggle').addClass('is_menu__open');
-    });
-});
+document.addEventListener('DOMContentLoaded', function () {
+    // nav-head__menutoggle 요소 선택
+    const menuToggle = document.querySelector('.nav-head__menutoggle');
 
-$(function () {
-    $('.nav-head__menutoggle').on('click', function () {
-        $('.nav-head__menutoggle').removeClass('is_menu__open');
+    // 요소에 클릭 이벤트 리스너 추가
+    menuToggle.addEventListener('click', function () {
+        // is_menu__open 클래스 토글
+        menuToggle.classList.toggle('is_menu__open');
     });
 });
