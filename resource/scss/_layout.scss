@@ -224,19 +224,24 @@ h1 {
 }
 
 .nav-head__menutoggle {
+    top: 20px;
     z-index: 10;
-    flex-direction: column;
+    flex-direction: row;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    border: none;
+    color: white;
 }
 
 .nav-head__menu {
     z-index: 3;
     justify-content: flex-end;
-}
-
-.nav-head__menu,
-.nav-head__menutoggle {
     position: relative;
-    display: inline-block;
+    display: flex;
+
     align-items: center;
     background-color: transparent;
     border: none;
@@ -245,7 +250,9 @@ h1 {
 
 .nav-head__menutoggle-text {
     position: relative;
+    flex-shrink: 0;
     order: 2;
+    margin-right: 20px;
     margin-top: 10px;
     overflow: hidden;
     font-size: 16px;
@@ -276,7 +283,7 @@ h1 {
     top: 0;
     left: 0;
     order: 1;
-    position: absolute;
+    position: relative;
     display: flex;
     height: 3rem;
     width: 3rem;
@@ -290,12 +297,12 @@ h1 {
 
 .nav-head__menutoggle-icon {
     z-index: 15;
+    transition: all 1.3s;
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2rem;
-    width: 2rem;
+    right: 15%;
+
+    height: 1.5rem;
+    width: 1.5rem;
     transition: transform 0.42s var(--ease-power4);
 }
 
