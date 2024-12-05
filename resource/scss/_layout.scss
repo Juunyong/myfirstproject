@@ -23,8 +23,12 @@ section {
         transition: all 1s;
     }
     .nav-head__menutoggle-circle {
-        transform: scale(13.5);
+        transform: scale(12);
         transition: all 1.3s;
+        @include mobileMore {
+            transform: scale(20);
+            transition: all 1.3s;
+        }
         @include tabletMore {
             transform: scale(30);
             transition: all 1.3s;

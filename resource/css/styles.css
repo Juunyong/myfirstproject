@@ -159,8 +159,14 @@ section {
   transition: all 1s;
 }
 .is_menu__open .nav-head__menutoggle-circle {
-  transform: scale(13.5);
+  transform: scale(12);
   transition: all 1.3s;
+}
+@media (min-width: 600px) {
+  .is_menu__open .nav-head__menutoggle-circle {
+    transform: scale(20);
+    transition: all 1.3s;
+  }
 }
 @media (min-width: 1024px) {
   .is_menu__open .nav-head__menutoggle-circle {
