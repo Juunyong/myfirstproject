@@ -158,6 +158,12 @@ section {
   rotate: 135deg;
   transition: all 1s;
 }
+.is_menu__open .outer-circle,
+.is_menu__open .middle-circle,
+.is_menu__open .inner-circle {
+  opacity: 1;
+  transition: all 1s;
+}
 .is_menu__open .nav-head__menutoggle-circle {
   transform: scale(12);
   transition: all 1.3s;
@@ -439,6 +445,66 @@ h1 {
   transition: all 1.3s;
 }
 
+#outer-text,
+#middle-text,
+#inner-text {
+  font-size: 2px;
+  font-family: "Cubano";
+}
+
+.outer-circle,
+.middle-circle,
+.inner-circle {
+  position: absolute;
+  top: 50%; /* 컨테이너의 세로 중앙 */
+  left: 50%; /* 컨테이너의 가로 중앙 */
+  transform: translate(-50%, -50%); /* 정확히 중앙에 배치 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* 원 모양 */
+  opacity: 0;
+  transition: all 1s;
+}
+
+.outer-circle {
+  height: 3rem;
+  width: 3rem;
+  background-color: rgba(0, 0, 255, 0.1); /* 바깥쪽 원 배경색 */
+  animation: rotateReverse 40s linear infinite; /* 반대 방향 회전 */
+}
+
+.middle-circle {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: rgba(0, 255, 0, 0.1); /* 중간 원 배경색 */
+  animation: rotate 40s linear infinite; /* 정방향 회전 */
+}
+
+.inner-circle {
+  height: 2rem;
+  width: 2rem;
+  background-color: rgba(255, 0, 0, 0.1); /* 안쪽 원 배경색 */
+  animation: rotateReverse 40s linear infinite; /* 반대 방향 회전 */
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+/* 반대 방향 회전 애니메이션 */
+@keyframes rotateReverse {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
 .nav-head__menutoggle-icon {
   z-index: 15;
   transition: all 1.3s;
