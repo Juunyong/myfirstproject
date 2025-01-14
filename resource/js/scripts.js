@@ -3,6 +3,17 @@
 gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline();
+let typeSplit = new SplitType('.main__title__text', {
+    types: 'lines, words, chars',
+    tagName: 'span',
+});
+gsap.from('.main__title__text .word', {
+    y: '100%',
+    opacity: 1,
+    duration: 0.3,
+    ease: 'circ.out',
+    stagger: 0.1,
+});
 
 tl.to('.w1', {
     y: 0,
