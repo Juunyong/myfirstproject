@@ -37,7 +37,7 @@ function createCircularText(elementId, radius) {
 }
 
 // 각각의 원에 대해 텍스트를 생성합니다.
-createCircularText('outer-text', 22); // 바깥쪽 원의 반지름
+createCircularText('outer-text', 23); // 바깥쪽 원의 반지름
 createCircularText('middle-text', 20); // 중간 원의 반지름
 createCircularText('inner-text', 18); // 안쪽 원의 반지름
 

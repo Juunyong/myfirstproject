@@ -10,9 +10,9 @@ let typeSplit = new SplitType('.main__title__text', {
 gsap.from('.main__title__text .word', {
     y: '100%',
     opacity: 1,
-    duration: 0.3,
+    duration: 0.7,
     ease: 'circ.out',
-    stagger: 0.1,
+    stagger: 0.5,
 });
 
 tl.to('.w1', {

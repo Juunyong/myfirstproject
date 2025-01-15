@@ -44,6 +44,11 @@ section {
         }
     }
 }
+.main__title__text {
+    overflow: hidden;
+    display: inline-block;
+    color: rgb(255 236 213 / var(--tw-text-opacity));
+}
 .page__container,
 .page__wrap {
     display: flex;
