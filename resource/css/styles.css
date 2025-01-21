@@ -479,23 +479,20 @@ h1 {
 }
 
 .outer-circle {
-  height: 3rem;
-  width: 3rem;
-  background-color: rgba(0, 0, 255, 0.1); /* 바깥쪽 원 배경색 */
+  height: 1rem;
+  width: 1rem;
   animation: rotateReverse 40s linear infinite; /* 반대 방향 회전 */
 }
 
 .middle-circle {
   height: 2.5rem;
   width: 2.5rem;
-  background-color: rgba(0, 255, 0, 0.1); /* 중간 원 배경색 */
   animation: rotate 40s linear infinite; /* 정방향 회전 */
 }
 
 .inner-circle {
   height: 2rem;
   width: 2rem;
-  background-color: rgba(255, 0, 0, 0.1); /* 안쪽 원 배경색 */
   animation: rotateReverse 40s linear infinite; /* 반대 방향 회전 */
 }
 
